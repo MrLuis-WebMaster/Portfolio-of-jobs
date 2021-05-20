@@ -1,0 +1,38 @@
+.home {
+    background-color: $ultramarine;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    
+    i {
+        font-size: 2rem;
+        color:$blanco;
+        text-align: center;
+    }
+}
+.hero {
+    .heading {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 5rem;
+            text-shadow: 3px 3px rgba(0,0,0,0.75);
+        }
+    }
+}
+.saludo {
+    margin-top: 20rem;
+
+    p {
+        font-size: 5rem;
+        color:$blanco;
+    }
+}

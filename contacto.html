@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/icon.png">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://kit.fontawesome.com/b973863d22.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Contac me</title>
+</head>
+<body>
+    <header>
+      <div class="hero">
+        <div class="contenedor">
+            <div class="contacto">
+                <div class="redes">
+                    <div class="contenedor-icono"> 
+                        <a class="contacto__enlace" target="_blank" href="https://www.facebook.com/lereysiis.quezada"><i class="fab fa-facebook-f fb"></i></a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a class="contacto__enlace" target="_blank" href="https://twitter.com/lereysis"><i class="fab fa-twitter tw"></i></a>
+
+                    </div>
+                    <div class="contenedor-icono">
+                        <a class="contacto__enlace" target="_blank" href="https://www.instagram.com/lereysisq/"><i class="fab fa-instagram ig"></i></a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a class="contacto__enlace" href="contacto.html"><i class="far fa-envelope email"></i></a>
+                    </div>
+                </div>
+                <a href="/index.html" class="home">
+                  <i class="fas fa-home"></i>
+                </a>
+                <div class="boton-img">
+                    <button id="btn_mode" class="btn-mode">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                    <div class="hero__perfil-img">
+                        <img src="build/img/lere.webp" alt="Imagen de perfil">
+                    </div>
+                </div>
+                <div class="box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="heading">
+          <h2>Contact me and let's achieve big dreams</h2>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+        <div class="form contenedor">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              I leave you the necessary data and 
+              links so that you can communicate with me.
+            </p>
+            <div class="info">
+              <div class="information">
+                <i class="fi-rr-world"></i>
+                <p>Medellin</p>
+              </div>
+              <div class="information">
+                <i class="fi-rr-envelope"></i>                
+                <p>lereysisquezada@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div id="Contacto" class="contact-form">
+            <form class="formulario" method="POST" action="https://formspree.io/f/xyyleodg" >
+              <fieldset>
+                <h3 class="title">Contact us</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" id="nombre" />
+                  <label>Username</label>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" id="email" />
+                  <label for="">Email</label>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" id="celular" />
+                  <label for="">Phone</label>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input" id="mensaje" ></textarea>
+                  <label>Message</label>
+                </div>
+                <input type="submit" value="Send" class="btn" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="main-footer contenedor">
+          <div class="footer-content">
+              <h3>Lereysis Quezada</h3>
+              <p>
+                  I always demand of myself in each work to preserve originality, 
+                  empathy, humanity and transparency so that each design is the best.
+              </p>
+              <ul class="socials">
+                  <li><a target="_blank" href="https://www.facebook.com/lereysiis.quezada"><i class="fa fa-facebook"></i></a></li>
+                  <li><a target="_blank" href="https://twitter.com/lereysis"><i class="fa fa-twitter"></i></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/lereysisq/"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+          </div>
+          <div class="copy">
+              <p>Copyright © 2021 Luis Martinez. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="build/js/formulario.js"></script>
+</body>
+</html>

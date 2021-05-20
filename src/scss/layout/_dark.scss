@@ -1,0 +1,47 @@
+body {
+    &.dark-mode {
+        background-color: $negroClaro;
+        .hero {
+            background-image: linear-gradient(rgba(63, 63, 63, 0.4), rgba(63, 63, 63, 0.4)), url(../img/fondo.webp);
+        }
+        .hero__perfil-img {
+            border: 4px solid $negroClaro;
+        }
+        footer {
+            background-color: $gris;
+        }
+
+        .perfil {
+            h2,p {
+                color: $blanco;
+            }
+        }
+
+        .section-inner {
+            .section-experience {
+                background-color: $gris;
+            }
+
+            .section-education {
+                background-color: $gris;
+            }
+
+            .section-skils {
+                background-color: $gris;
+            }
+            h2,h3,h4,p {
+                color: $blanco;
+            }
+        }
+        .nav-gallery {
+            background-color: $gris;
+        }
+        .btn-mode--dark-mode {
+            background-color: $crimsonsky;
+            &::after {
+                left: 0;
+            }
+        }
+    }
+}
+

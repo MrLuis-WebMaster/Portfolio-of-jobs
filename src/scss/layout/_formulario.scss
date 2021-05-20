@@ -1,0 +1,154 @@
+.container {
+    width: 100%;
+    padding: 2rem;
+}
+  .form { 
+    padding:1rem;
+    width: 100%;
+    max-width: 80rem;
+    background-color: $indigo;
+    border-radius: 1rem;
+    fieldset {
+      border: none;
+      .title {
+        color:$blanco;
+      }
+    }
+    .contact-form {
+      background-color:$ultramarine;
+    }
+
+  }
+
+  .contact-info {
+    p {
+      color:$blanco;
+    }
+      .info {
+        p{
+          color:$blanco;
+        }
+
+      }
+  }
+
+   
+  .input-container {
+    margin-top: 2.5rem;
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    outline: none;
+    border: 0.2rem solid $blanco;
+    background: none;
+    padding: 1rem;
+    color:$blanco;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+  }
+  
+  textarea.input {
+    padding: 1rem;
+    min-height: 20rem;
+    border-radius: 2rem;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    padding: 1rem;
+    color:$blanco;
+    font-size: 2rem;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-container.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+  }
+  
+  .btn {
+    padding: 1rem;
+    background-color: $blanco;
+    border: 0.2rem solid $blanco;
+    font-size: 2rem;
+    line-height: 1;
+    border-radius: 2rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: transparent;
+      color: $blanco;
+    }
+  }
+
+  .input-container.focus label {
+    top: 0;
+    transform: translateY(-80%);
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    padding: 2rem;
+
+    .title {
+      color: $blanco;
+    }
+  }
+  
+  .information {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 2rem;
+    i {
+      font-size: 3rem;
+      color: $crimsonsky;
+    }
+  }
+  
+  .social-media {
+    padding: 1rem;
+
+  }
+  
+
+  @include tablet {
+    .form {
+      @include grid (2,0)
+    }
+  }
+
+
+  .alerta {
+    background-color: rgb(185, 0, 0);
+    color: $blanco;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 80%;
+    margin: 2rem auto;
+  }
+
+  .exito {
+    background-color: rgb(0, 185, 0);
+    color: $blanco;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 80%;
+    margin: 2rem auto;
+  }
+
+

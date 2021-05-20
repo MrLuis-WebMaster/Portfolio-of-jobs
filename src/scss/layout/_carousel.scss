@@ -1,0 +1,61 @@
+.carousel {
+  margin-top:10rem ;
+  height: 40rem;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item {
+      height: 100%;
+      .w-100 {
+        height: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+@include tablet {
+
+    .carousel{
+        margin: 10rem auto 0 auto;
+        width: 60rem;
+    
+        .carousel-inner {
+            overflow: visible;
+            width: 80%;
+        }
+        .carousel-item {
+    
+            width: 80%;
+            img {
+                border-radius: 1.5rem;
+            }
+        }
+    
+    }
+    .carousel-control-prev {
+        left: -10rem;
+      }
+      .carousel-control-next {
+        right: -10rem;
+      }
+      .carousel-caption {
+        position: absolute;
+        text-align: center;
+        left: 110%;
+        right: auto;
+        top: 0;
+        h2 {
+            font-size: 4rem;
+        }
+      }
+    // transition de imagenes
+      .active.carousel-item-start,
+      .active.carousel-item-end {
+        opacity: 0;
+        transition: none 1s ease-in-out;
+      }
+
+}
+
+
+
+

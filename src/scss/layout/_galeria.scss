@@ -1,0 +1,137 @@
+.nav-gallery {
+    text-align: center;
+    padding-bottom: 3rem;
+    background-color: $lightblue;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 51%);
+    -moz-box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 51%);
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 51%);
+    margin: 1.5rem 0;
+    transition: all .5s ease;
+    
+    @include tablet {
+        padding-bottom: 2rem;
+    }
+}
+
+.portafolio {
+  h2 {
+      font-weight: 400;
+  }
+}
+.nav-gallery__enlace {
+    color: $blanco;
+    padding: 1rem;
+    border-bottom: 3px #ff85c200 solid;
+    transition: all ease-in-out .3s;
+    margin-bottom: 1rem;
+
+    &:hover {
+        border-bottom: 3px $blanco solid;
+    }
+}
+
+.nav-gallery__enlace--active {
+    border-bottom: 3px $blanco solid;
+}
+
+.nav-gallery__enlace--w100 {
+    width: 100%;
+    display: block;
+    border: none;
+    @include tablet {
+        width: 100%;
+        display: inline;
+    }
+}
+
+.grid {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.8s linear 1s;
+    width: 100%;
+  }
+  .images-loaded .grid {
+    opacity: 1;
+  }
+  .item {
+    display: block;
+    position: absolute;
+    margin: 1rem;
+    padding: 0;
+    @include tablet {
+      width: calc(33.33% - 20px);
+    }
+
+  }
+  .item.muuri-item-hidden {
+    z-index: 0;
+  }
+  .item.muuri-item-releasing {
+    z-index: 2;
+  }
+  .item.muuri-item-dragging {
+    z-index: 3;
+  }
+  .item-content {
+    position: relative;
+    cursor: pointer;
+  }
+  .item-content > img {
+    display: block;
+    border-radius: 6px;
+
+  }
+  
+  .images-loaded .loading {
+    opacity: 0;
+  }
+
+
+  .overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    place-items: center;
+    z-index: 1;
+
+    .overlay__parrafo {
+      background-color: $blanco;
+      border-radius: 1rem;
+
+      p {
+        text-align: center;
+        margin: 0;
+        padding:1rem;
+      }
+    }
+  }
+.overlay-active {
+  display: grid;
+}
+.overlay__contenedor {
+  display: grid;
+  place-items: center;
+  width: 80%;
+  @include tablet {
+    width: 30%;
+}
+  
+  #overlay__contenedor--boton {
+    background-color: $blanco;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    &:hover {
+        cursor: pointer;
+    }
+  }
+}
+
