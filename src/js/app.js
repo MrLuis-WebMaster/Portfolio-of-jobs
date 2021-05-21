@@ -33,7 +33,7 @@ function galeria () {
         document.querySelector('.nav-gallery__enlace--active').classList.remove('nav-gallery__enlace--active');
         enlace.classList.add('nav-gallery__enlace--active');
         let categoria = enlace.innerHTML.toLowerCase();
-        categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);   
+        categoria === 'all' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);   
 
     });
 }
@@ -66,12 +66,12 @@ function CerrarVentana () {
 }
 function mostrarseccion () {
     //Eliminar mostrar seccion
-    const seccionAnterior = document.querySelector(".show");
+    const seccionAnterior = document.querySelector(".display");
     if (seccionAnterior) {
-        seccionAnterior.classList.remove("show");
+        seccionAnterior.classList.remove("display");
     }
     const seccionActual = document.querySelector(`#paso${pagina}`);
-    seccionActual.classList.add('show');
+    seccionActual.classList.add('display');
 } 
 function cambiarseccion () {
     const enlaces = document.querySelectorAll(".main-nav a");

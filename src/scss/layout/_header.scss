@@ -27,9 +27,7 @@
     }
 }
 
-
 //Barra de contacto
-
 .contacto {
     display: flex;
     gap: 2rem;
@@ -38,9 +36,11 @@
     padding-top: 3rem;
     height: 8rem;
     .redes {
-        display: flex;
-        gap: 2rem;
-
+        display: none;
+        @include tablet {
+            display: flex;
+            gap: 2rem;
+        }
         .tw {
             background: #1da1f2;
         }
@@ -92,7 +92,7 @@
 
 
     .btn-mode {
-        
+        display: none;
         padding: .8rem;
         border: none;
         border-radius: 2rem;
@@ -159,6 +159,23 @@
     }
 
 }
+.btn-primary {
+    background-color: $indigo;
+    border: none;
+}
+.btn {
+    height: 5rem;
+    width: 5rem;
+    i {
+        font-size: 3rem;
+    }
+    @include tablet {
+        display: none;
+    }
+}
 
+.offcanvas {
+    background-color: $lightblue;
+}
 
 

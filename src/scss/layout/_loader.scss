@@ -43,8 +43,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    right: 0;
+    bottom: 0;
     top: 0;
-    left: 0%;
+    left: 0;
     position: fixed;
     clip-path: circle(100% at 50% 50%);
     transition: clip-path 1.8s ease-in-out;
