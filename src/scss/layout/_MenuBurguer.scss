@@ -1,0 +1,25 @@
+.Burguer-Redes {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    a {
+        padding: 3rem 1rem;
+        background-color: $indigo;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        color: $blanco;
+        font-size: 2rem;
+        width: 70%;
+
+        &:hover {
+            background-color: $ultramarine;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
