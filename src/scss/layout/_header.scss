@@ -27,6 +27,13 @@
     }
 }
 
+.h-100 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: heigth;
+}
+
 //Barra de contacto
 .contacto {
     display: flex;
@@ -130,22 +137,16 @@
     
 
 }
-
-
 .nav {
     display: flex;
-    flex-direction:column ;
+    align-items: center;
     justify-content: center;
-    height: 12rem;
-
+    flex-basis: 100%;
 }
 .main-nav {
-    margin-top:2rem;
-    border-radius: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
-
     .main-nav__enlace {
         color: $blanco;
         border-radius:1rem;
@@ -160,14 +161,19 @@
 
 }
 .btn-primary {
-    background-color: $indigo;
+    background-color: transparent;
     border: none;
+    padding: 0;
 }
 .btn {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     i {
-        font-size: 3rem;
+        font-size: 3rem;    
     }
     @include tablet {
         display: none;
