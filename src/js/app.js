@@ -10,14 +10,20 @@ window.addEventListener('load', function () {
   });
 document.addEventListener("DOMContentLoaded", function(){
     document.querySelector(".loader").classList.toggle("loader2");
-
+    PopPup ();
     cambiarseccion ();
     DarkMode();
     galeria();
     VentanaModal();
     CerrarVentana();
-    
 });
+function PopPup () {
+    const BotonClose = document.querySelector(".boton-close");
+    BotonClose.addEventListener("click", () => {
+        const welcome = document.querySelector(".welcome");
+        welcome.classList.add("boton-close-active");
+    })
+}
 function DarkMode () {
     const btnMode = document.querySelector('#btn_mode');
     btnMode.addEventListener('click',function changeMode() {
