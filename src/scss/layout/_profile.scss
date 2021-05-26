@@ -4,7 +4,9 @@
     }
     margin: 2rem 0;
     .ilustracion {
-        width: 40rem;
+        @include tablet {
+            width: 40rem;
+        }
     }
 }
 

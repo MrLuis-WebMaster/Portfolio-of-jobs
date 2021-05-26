@@ -17,7 +17,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 2rem;
+        column-gap: 2rem;
         background-color: $blancoHueso;
         background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
         height:80%;
@@ -33,6 +33,7 @@
         }
         h1 {
             font-size: 4.5rem;
+            margin: 0;
             &::after {
                 content: "";
                 border-bottom: 1.5px solid $ultramarine;

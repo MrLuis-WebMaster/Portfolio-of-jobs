@@ -36,10 +36,12 @@ function galeria () {
     galleryNav.addEventListener('click', function filtradoGaleria(e) {
         e.preventDefault();
         let enlace = e.target;
+        console.log(enlace);
         document.querySelector('.nav-gallery__enlace--active').classList.remove('nav-gallery__enlace--active');
         enlace.classList.add('nav-gallery__enlace--active');
         let categoria = enlace.innerHTML.toLowerCase();
-        categoria === 'all' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);   
+        console.log(categoria);
+        categoria === 'all' ?  grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);   
 
     });
 }
